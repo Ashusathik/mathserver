@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>power</title>
+    </head>
+<body>
+    <h1 align="center" > power calculator</h1>
+    <form align="center" method="POST">
+    {%csrf_token%}
+     
+    <div class="power">
+
+        <label for="INTENSITY"><b>INTENSITY:</b></label>
+        <input type="text" name="intensity" id="INTENSITY" placeholder="Enter the Value" value="{{i}}">
+    </div>
+    <br>
+    <div class="power">
+        <label for="RESISTANCE"><b>RESISTANCE:</b></label>
+        <input type="text" name="resistance" id="RESISTANCE" placeholder="Enter the Value" value="{{r}}">
+    </div>
+    <br>
+    <input type="submit" value="CALCULATE">
+    <br>
+    <br>
+    <div class="power">
+        <label for="POWER"><b>POWER:</b></label>
+        <input type="text" name="POWER" id="POWER" placeholder="Answer" value="{{power}}">
+        
+    </div>
+</form>
+</body>
+</html>
